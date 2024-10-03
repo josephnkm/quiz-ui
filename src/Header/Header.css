@@ -1,0 +1,42 @@
+/* Header.css */
+
+.header-title {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+.header-title:hover {
+    color: #fffacd; /* Soft yellow color for glow */
+    text-shadow: 
+        0 0 5px #fffacd, 
+        0 0 10px #fffacd, 
+        0 0 15px #ffeb3b, 
+        0 0 20px #ffeb3b, 
+        0 0 30px #ffeb3b, 
+        0 0 40px #ffeb3b;
+    animation: glitter 1s infinite linear;
+}
+
+/* Glitter animation */
+@keyframes glitter {
+    0%, 100% {
+        text-shadow: 
+            0 0 5px #fffacd, 
+            0 0 10px #fffacd, 
+            0 0 15px #ffeb3b, 
+            0 0 20px #ffeb3b, 
+            0 0 30px #ffeb3b, 
+            0 0 40px #ffeb3b;
+    }
+    50% {
+        text-shadow: 
+            0 0 5px #fffacd, 
+            0 0 10px #fffacd, 
+            0 0 15px #ffeb3b, 
+            0 0 25px #ffeb3b, 
+            0 0 35px #ffeb3b, 
+            0 0 45px #ffeb3b;
+    }
+}
